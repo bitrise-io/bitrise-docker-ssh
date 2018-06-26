@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
-ENV TOOL_VER_DOCKER="17.06.2"
+ENV TOOL_VER_DOCKER="18.03.1"
 
 RUN apt-get update -qq \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -22,6 +22,6 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubunt
  && DEBIAN_FRONTEND=noninteractive apt-get update -qq \
  && DEBIAN_FRONTEND=noninteractive apt-cache policy docker-ce \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    docker-ce=${TOOL_VER_DOCKER}~ce-0~ubuntu
+    docker-ce=${TOOL_VER_DOCKER}~ce~3-0~ubuntu
 
 CMD ["/usr/sbin/sshd", "-D"]
