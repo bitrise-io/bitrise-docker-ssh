@@ -16,3 +16,7 @@ command="docker exec -it bitrise-main-container bash" ssh-rsa AAA...t
 
 Then, if you SSH into this image (in the above example, ssh into the `2222` port) you'll automatically get `docker exec`-d into
 the other container (in this example the one running with a name `bitrise-main-container`).
+
+[Request a feature](https://discuss.bitrise.io/c/feature-request)
+
+[Report an issue](https://discuss.bitrise.io/c/issues/other-issues)
